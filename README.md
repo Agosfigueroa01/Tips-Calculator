@@ -1,50 +1,10 @@
-# React + TypeScript + Vite
+# Tips Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Short website is build in Typescript and React + Tailwind. The objective for this app is for the user to be able to add the items it spent and calculate the amount of tip it's willing to pay. By adding them (the items) in the calculator, the user can see how much it is spending and can also add the tip as a percentage of the total amount to be paid (10%, 20% or 50% respectively). It was created with the iniciative on learning hooks and custom hooks, along with logic and fixing issues in while creating it. It's a responsive website so it can be opened in mobile devices and it'll be well adapted.
 
-Currently, two official plugins are available:
+Observations:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- The user can add many of the same items and they will be added up in the calculator within the preview of the same item.
+- The calculator will add or subtract the prices of the items and the quantity of them to show the user a final price of what it should pay.
+- If the user reloads the page, the cart is maintained with the amount of products previously selected.
+- The BackEnd code will be added later for a better Quality of the Product.
